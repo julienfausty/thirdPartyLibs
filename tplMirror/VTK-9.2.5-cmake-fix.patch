@@ -19,11 +19,3 @@
        string(APPEND _MPI_${LANG}_LINK_FLAGS ">")
      endif ()
      set_property(TARGET MPI::MPI_${LANG} PROPERTY INTERFACE_LINK_OPTIONS "${_MPI_${LANG}_LINK_FLAGS}")
-@@ -1823,7 +1824,6 @@
- find_package_handle_standard_args(MPI
-     REQUIRED_VARS ${_MPI_REQ_VARS}
-     VERSION_VAR ${_MPI_MIN_VERSION}
--    REASON_FAILURE_MESSAGE "${_MPI_FAIL_REASON}"
-     HANDLE_COMPONENTS)
- 
- #=============================================================================
